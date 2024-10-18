@@ -1,0 +1,36 @@
+{
+  "name": "webrtc-freeze-duration",
+  "private": true,
+  "version": "0.0.0",
+  "author": {
+    "name": "xsm",
+    "email": "ltsg0317@outlook.com"
+  },
+  "keywords": [
+    "WebRTC",
+    "tools",
+    "totalFreezeDuration"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/webrtc-toolbox/webrtc-freeze-duration.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc && tsx ./scripts/build-api.ts"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.36.0",
+    "@types/node": "^18.16.0",
+    "terser": "5.16.3",
+    "tsx": "^3.12.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "webrtc-tools": "^1.0.0"
+  }
+}
